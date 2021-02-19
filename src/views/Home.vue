@@ -1,18 +1,21 @@
-<template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  .home-wrapper
+    .title-wrapper
+      h1 Vue를 활용한 날씨정보 앱
+        small.ml-3 v1.0
+    Search
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Search from '../components/Search.vue'
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  }
+  components: { Search }
 }
 </script>
+<style lang="scss" scoped>
+  @import '@/assets/scss/_mixins.scss';
+
+  .home-wrapper {
+    text-align: center;
+  }
+</style>
