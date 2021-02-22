@@ -7,7 +7,7 @@
 			li.navi
 				router-link(to='/daily') DAILY
 			li.navi
-				router-link(to='/days') 5DAYS
+				router-link(to='/5days') 5DAYS
 </template>
 <script>
 export default {
@@ -15,24 +15,22 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  @import '@/assets/scss/_mixins.scss';
-
-	.header-wrapper {
-    color: $colorLighter;
-    background-color: $colorDarker;
-    @include flex($SB, $CT);
-    .logo {
-      @include flex($FS, $CT);
-      padding: 1em;
-      i {
-        margin-right: 1em;
-      }
-    }
-    .navi-wrapper {
-      @include flex($FS, $CT);
-      .navi {
-        padding: 1em;
-      }
-    }
-  }
+.header-wrapper {
+	color: $colorLighter;
+	background-color: $colorDarker;
+	@include flex($SB, $CT);
+	.logo {
+		@include flex($FS, $CT);
+		padding: 1em;
+		i {
+			margin-right: 1em;
+		}
+	}
+	.navi-wrapper {
+		@include flex($FS, $CT);
+		.navi {
+			padding: 1em;
+		}
+	}
+}
 </style>

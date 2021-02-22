@@ -7,24 +7,23 @@
 <script>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+
 export default {
 	name: 'App',
-	components: {	Header, Footer	}
+	components: { Header, Footer }
 }
 </script>
 <style lang="scss">
-  @import "./assets/scss/_mixins.scss";
-
-  #app {
-    height: 100vh;
-    flex-direction: column;
-    @include flex($SB, $ST);
-    .wrapper {
-      border-left: 1px solid $colorDarker;
-      border-right: 1px solid $colorDarker;
-      flex-grow: 1;
-      overflow-y: auto;
-      padding: 2em;
-    }
-  }
+#app {
+	@include flex($SB, $ST);
+	flex-direction: column;
+	height: 100vh;
+	.wrapper {
+		border-left: 1px solid $colorLight;
+		border-right: 1px solid $colorLight;
+		flex-grow: 1;
+		overflow-y: auto;
+		padding: 2em;
+	}
+}
 </style>

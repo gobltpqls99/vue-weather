@@ -1,5 +1,5 @@
 <template lang="pug">
-  .Daily-wrapper
+  .daily-wrapper
     h1 DAILY
 </template>
 <script>
@@ -8,9 +8,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  @import '@/assets/scss/_mixins.scss';
-
-  .Daily-wrapper {
+  .daily-wrapper {
     text-align: center;
   }
 </style>
