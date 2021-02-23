@@ -1,4 +1,5 @@
 export default {
 	selectedCity: '',
-	daily: {},
+	daily: null,
+	days: null
 }

@@ -14,18 +14,18 @@ export default {
 			v.value = v.id
 			return v;
 		});
-		this.city.unshift({value: null, text: '도시를 선택하세요.'});
-		this.app.id = VUE_APP_ID
+		this.city.unshift({value: null, text: '현재위치'});
 	},
 	watch: {
-		selected: function(nv, ov) {
-			this.$store.dispatch('ACT_CITY', nv)
+		selected: function(nv) {
+			this.$store.dispatch('ACT_WEATHER', nv)
 		}
 	},
 	data() {
 		return {
 			selected: null,
 			city: [],
+			app_id: ''
 		}
 	}
 }

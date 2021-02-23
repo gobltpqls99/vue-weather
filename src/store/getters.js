@@ -4,5 +4,8 @@ export default {
 	},
 	GET_DAILY(state) {
 		return state.daily
+	},
+	GET_DAYS(state) {
+		return state.days
 	}
 }

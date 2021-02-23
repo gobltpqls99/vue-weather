@@ -4,5 +4,8 @@ export default {
 	},
 	MUT_DAILY(state, r) {
 		state.daily = r;
+	},
+	MUT_DAYS(state, r) {
+		state.dyas = r;
 	}
 }
