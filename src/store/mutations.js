@@ -6,6 +6,9 @@ export default {
 		state.daily = r;
 	},
 	MUT_DAYS(state, r) {
-		state.dyas = r;
+		state.days = r;
+	},
+	MUT_LOADING(state, r) {
+		state.isLoading = r;
 	}
 }
