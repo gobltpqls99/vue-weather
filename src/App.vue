@@ -26,10 +26,12 @@ export default {
 	flex-direction: column;
 	padding: 0;
 	height: 100vh;
+
 	.wrapper-view {
 		border-left: 1px solid $colorLight;
 		border-right: 1px solid $colorLight;
-		overflow-y: auto;
+		flex-grow: 1;
+		overflow-y: hidden;
 		@include mobile {
 			border-left: none;
 			border-right: none;

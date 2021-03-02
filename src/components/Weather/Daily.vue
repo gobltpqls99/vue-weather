@@ -40,8 +40,8 @@ export default {
 		icon: function() {
 			return (
 				this.GET_DAILY
-				? `https://openweathermap.org/img/wn/${this.GET_DAILY.weather[0].icon}@2x.png`
-				: 'https://via.placeholder.com/25x25&text=no%20icon'
+				? `http://openweathermap.org/img/wn/${this.GET_DAILY.weather[0].icon}@2x.png`
+				: 'http://via.placeholder.com/25x25&text=no%20icon'
 			)
 		},
 		temp: function() {
@@ -82,11 +82,8 @@ export default {
 <style lang="scss" scoped>
 	.wrapper-daily {
 		.Title {
-			display: inline-block;
 			font-size: 1.25em;
-			padding: 0 0.25em;
-			border-bottom: 1px solid $colorLight;
-			margin: auto;
+			border-bottom: 2px solid $colorLighter;
 		}
 		.Time {
 			margin-bottom: 1em;
